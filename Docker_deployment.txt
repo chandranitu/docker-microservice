@@ -1,0 +1,37 @@
+
+Steps to create microservices:
+1. open IDE (eclipse/intellij/STS)
+2. --intellij create new prog->maven->archtype (org.jetbrains.idea.maven.model.MavenArchetypequickstart	) 
+3. set pom.xml
+4. make a project
+5. create docker file(Dockerfile) check with name
+6. check docker plugins in IDE
+7. make sure docker has started in system (service start docker)
+6. go to command prompt(project) build project
+/home/hadoop/IdeaProjects/springbootdocker-demo>mvn clean install
+
+7. same path
+docker build -t springbootdocker .
+
+8. once build done in docker then
+docker images
+docker run -p 8080:8080 springbootdocker
+docker rm imageid
+ docker container ps
+
+9.
+
+
+
+
+
+
+
+
+
+
+
+------------
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /home/hadoop/IdeaProjects/springbootdocker-demo/Dockerfile: no such file or directory
+no main manifest attribute, in springdocker-demo.jar
+
