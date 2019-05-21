@@ -9,6 +9,7 @@ node{
       //sh "${mvnHome}/bin/mvn package"
 	  "${mvnHome}/bin/mvn package"
    }
+   /*
    stage('Email Notification'){
       mail bcc: '', body: '''Hi Welcome to jenkins email alerts
       Thanks
@@ -21,5 +22,5 @@ node{
        message: 'Welcome to Jenkins, Slack!', 
        teamDomain: 'javahomecloud',
        tokenCredentialId: 'slack-demo'
-   }
+   }*/
 }
