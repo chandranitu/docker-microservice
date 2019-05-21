@@ -2,8 +2,7 @@ node{
    stage('SCM Checkout'){
      git 'https://github.com/chandranitu/docker-microservice'
    }
-   stage('Compile-Package'){
-    
+   stage('Compile-Package'){    
       def mvnHome =  tool name: 'maven3.6', type: 'maven'
 	  
       //sh "${mvnHome}/bin/mvn package"
