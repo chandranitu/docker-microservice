@@ -1,0 +1,10 @@
+mysql> desc contact;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| contact_id | int(11)     | NO   | PRI | NULL    |       |
+| name       | varchar(45) | NO   |     | NULL    |       |
+| email      | varchar(45) | NO   |     | NULL    |       |
+| address    | varchar(45) | NO   |     | NULL    |       |
+| telephone  | varchar(45) | NO   |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
