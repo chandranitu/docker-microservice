@@ -1,3 +1,8 @@
+
+Cannot determine embedded database driver class for database type NONE
+
+https://reviewdb.io/posts/1502132811356/how-to-fix-cannot-determine-embedded-database-driver-class-for-database-type-none-in-springboot
+
 mysql> desc contact;
 +------------+-------------+------+-----+---------+-------+
 | Field      | Type        | Null | Key | Default | Extra |
