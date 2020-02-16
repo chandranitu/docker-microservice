@@ -11,15 +11,15 @@ Steps to create microservices:
 /home/hadoop/IdeaProjects/springbootdocker-demo>mvn clean install
 
 7. same path
-docker build -t springbootdocker .
+sudo docker build -t springbootdocker .
 
 8. once build done in docker then
 docker images
 docker run -p 8080:8080 springbootdocker
 docker rm imageid
  docker container ps
-
-9.
+#push image to docker hub
+9.docker push cnsnoida/docker-microservice:tagname
 
 
 
