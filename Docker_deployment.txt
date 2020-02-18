@@ -1,4 +1,6 @@
 
+git clone https://chandranitu@github.com/chandranitu/docker-microservice.git
+
 Steps to create microservices:
 1. open IDE (eclipse/intellij/STS)
 2. --intellij create new prog->maven->archtype (org.jetbrains.idea.maven.model.MavenArchetypequickstart	) 
@@ -15,12 +17,27 @@ sudo docker build -t springbootdocker .
 
 8. once build done in docker then
 docker images
-docker run -p 8080:8080 springbootdocker
+sudo docker run -p 8080:8080 springbootdocker
 docker rm imageid
  docker container ps
 #push image to docker hub
-9.docker push cnsnoida/docker-microservice:tagname
 
+9. docker-machine ip default
+
+run on browser  http://192.168.99.100:8080/
+
+10. Docker image push to docker hub
+
+docker login --username=cnsnoida 
+
+--tag image
+docker tag 6de0eb842d01 cnsnoida/springbootdocker:firsttry
+--then push
+docker push cnsnoida/springbootdocker
+
+--test
+docker rmi -f 6de0eb842d01
+docker pull cnsnoida/springbootdocker
 
 
 
